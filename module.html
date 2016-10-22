@@ -1,0 +1,40 @@
+<div class="panel panel-default" ng-controller="KismetStarter">
+  <div class="panel-heading">
+    <h1>Kismet Starter</h1>
+  </div>
+  <div class="panel-body">
+      <button class="btn btn-default" ng-click="StartKismet()">
+          Start Kismet
+      </button>
+      <button class="btn btn-default" ng-click="StopKismet()">
+        Stop Kismet
+      </button>
+      <button class="btn btn-default" ng-click="CheckReply()">
+        Check Reply
+      </button>
+  </div>
+  <div class="panel-body">
+    <table class="table-bordered">
+      <tr>
+        <th>Service</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>Device</td><td>{{DeviceStat}}</td>
+      </tr>
+      <tr>
+        <td>ADB</td><td>{{ADBStat}}</td>
+      </tr>
+      <tr>
+        <td>NTP</td><td>{{NTPStat}}</td>
+      </tr>
+      <tr>
+        <td>GPSD</td><td>{{GPSDStat}}</td>
+      </tr>
+      <tr>
+        <td>Kismet-Server</td><td>{{KismetStat}}</td>
+      </tr>
+    </table>
+    {{status}}
+  </div>
+</div>
