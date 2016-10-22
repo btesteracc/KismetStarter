@@ -43,6 +43,7 @@ $scope.CheckReply =(function(){
           $scope.KismetStat=(response.KismetStat!="")?"up":"down";
     })});
     $scope.CheckStatus();
+    //just a comment
 
 }
 ]);
