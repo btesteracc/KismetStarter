@@ -8,6 +8,7 @@ registerController('KismetStarter', ['$api', '$scope', function($api,$scope){
     }, function(response){
         //if (response.error==undefined){
           $scope.status=response;
+          $scope.CheckStatus();
       //  }
     })});
     $scope.StopKismet=(function(){
@@ -17,9 +18,11 @@ registerController('KismetStarter', ['$api', '$scope', function($api,$scope){
   }, function(response){
       //if (response.error==undefined){
         $scope.status=response;
+        $scope.CheckStatus();
     //  }
   })});
 
+//Execute Random commands to check the response
 $scope.CheckReply =(function(){
     $api.request({
     module:"KismetStarter",
@@ -27,6 +30,7 @@ $scope.CheckReply =(function(){
   }, function(response){
       //if (response.error==undefined){
         $scope.status=response;
+        $scope.CheckStatus();
     //  }
   })});
 
