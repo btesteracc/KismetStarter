@@ -21,12 +21,12 @@
     }
 
     private function DoStartKismet(){
-      exec('/root/KismetStarter/scripts/wardriving.sh');
+      exec('/sd/modules/KismetStarter/scripts/wardriving.sh');
       $this->response=DoCheckStatus();
     }
 
     private function DoStopKismet(){
-      exec('/root/KismetStarter/scripts/stop_wardriving.sh');
+      exec('/sd/modules/KismetStarter/scripts/stop_wardriving.sh');
       $this->response=DoCheckStatus();
     }
 

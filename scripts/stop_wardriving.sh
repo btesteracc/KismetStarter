@@ -11,5 +11,5 @@ done
 /bin/sleep 5
 killall adb
 ifconfig wlan1 down
-iwconfig wlan1 mode master
+iwconfig wlan1 mode managed
 ifconfig wlan1 up
